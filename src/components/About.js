@@ -6,7 +6,7 @@ function About() {
 		<section>
 			<Hero />
 			<section className="flex justify-center items-center">
-				<div className="py-20 max-w-[100%] lg:max-w-[60em] xl:max-w-[70em] 2xl:max-w-[80em] child:w-full">
+				<div className="py-20 w-[100%] lg:w-[60em] xl:w-[70em] 2xl:w-[80em] child:w-full">
 					<ContentBlock
 						heading="This is a heading."
 						text={[

@@ -67,7 +67,7 @@ const researchAssistants = [
 export default function Members() {
 	return (
 		<section className="flex justify-center items-center">
-			<div className="py-20 max-w-[100%] lg:max-w-[60em] xl:max-w-[70em] 2xl:max-w-[80em] child:w-full">
+			<div className="py-20 w-[100%] lg:w-[60em] xl:w-[70em] 2xl:w-[80em] child:w-full">
 				<h1 className="text-4xl text-slate-800 mb-8">Principal Investigators</h1>
 				<section className="grid grid-cols-2 gap-16">
 					{principalInvestigators.map(pi => (
@@ -82,13 +82,13 @@ export default function Members() {
 				</section>
 				<h1 className="text-4xl text-slate-800 mt-16 mb-8">Research Assistants</h1>
 				<section className="grid grid-cols-2 gap-16">
-					{researchAssistants.map(pi => (
+					{researchAssistants.map(ra => (
 						<MemberCard
-							key={pi.name}
-							img={pi.img}
-							name={pi.name}
-							role={pi.role}
-							details={pi.details}
+							key={ra.name}
+							img={ra.img}
+							name={ra.name}
+							role={ra.role}
+							details={ra.details}
 						/>
 					))}
 				</section>

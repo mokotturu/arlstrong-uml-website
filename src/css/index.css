@@ -21,3 +21,7 @@ code {
   flex-direction: column;
   min-height: 100vh;
 }
+
+p, li {
+  font-size: 110%;
+}
