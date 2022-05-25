@@ -6,7 +6,7 @@ function About() {
 		<section>
 			<Hero />
 			<section className="flex justify-center items-center">
-				<div className="py-20 w-[100%] lg:w-[60em] xl:w-[70em] 2xl:w-[80em] child:w-full">
+				<div className="py-20 responsive-width child:w-full">
 					<ContentBlock
 						heading="This is a heading."
 						text={[
@@ -17,7 +17,7 @@ function About() {
 				</div>
 			</section>
 		</section>
-	);
+	)
 }
 
 export default About;

@@ -1,12 +1,12 @@
 export default function ContentBlock({heading, text}) {
 	return (
-		<section className="flex flex-col items-center">
-			<div className="flex flex-col gap-12 w-full">
-				{heading !== '' && <h1 className="text-4xl text-slate-800">{heading}</h1>}
+		<section>
+			{heading !== '' && <h1 className="heading">{heading}</h1>}
+			<div>
 				{text.map((item, i) => (
 					<p
 						key={i}
-						className="text-slate-600"
+						className="text-slate-600 mb-8 last:mb-0"
 					>
 						{item}
 					</p>

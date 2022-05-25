@@ -30,17 +30,18 @@ const publications = [
 export default function Publications() {
 	return (
 		<section className="flex justify-center items-center">
-			<div className="py-20 w-[100%] lg:w-[60em] xl:w-[70em] 2xl:w-[80em] child:w-full">
+			<div className="py-20 responsive-width child:w-full">
 				{publications.map((set, id) => (
 					<section
-						className="mb-16"
+						className="mb-16 last:mb-0"
 						key={`publication-set-${id}`}
 					>
-						<h1 className="text-4xl text-slate-800 mb-8">{set.heading}</h1>
+						<h1 className="heading">{set.heading}</h1>
 						<ol className="list-decimal list-inside ml-4">
 							{set.set.map((item, i) => (
 								<li
-								key={`publication-${i}`}
+									key={`publication-${i}`}
+									className="mb-2 last:mb-0"
 								>
 									<span className="ml-2">{item.citation}</span>
 								</li>
@@ -50,5 +51,5 @@ export default function Publications() {
 				))}
 			</div>
 		</section>
-	);
+	)
 }
