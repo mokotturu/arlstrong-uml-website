@@ -33,20 +33,20 @@ export default function Navbar() {
 		<Router>
 			<section className="flex-[1_0_auto]">
 				{/* desktop navbar */}
-				<nav className="sticky z-30 top-0 bg-slate-800 hidden lg:flex lg:justify-center h-16">
-					<div className="text-slate-50 font-medium flex justify-between items-center lg:min-w-[65em] xl:min-w-[75em] 2xl:min-w-[85em]">
+				<nav className="sticky z-30 top-0 bg-eerie-black-900 hidden lg:flex lg:justify-center h-16">
+					<div className="text-white font-medium flex justify-between items-center lg:min-w-[65em] xl:min-w-[75em] 2xl:min-w-[85em]">
 						<NavLink to="/" className="text-2xl flex items-center">
 							<img src={umlLogo} alt="UMass Lowell" className="h-12 pr-4" />
 							<img src={arlStrongLogo} alt="UMass Lowell" className="h-12 pr-4" />
 							<p className="hidden lg:block xl:block 2xl:block font-bold">ARL STRONG</p>
 						</NavLink>
 						<div className="right">
-							<div className="flex gap-8 child:inline child:rounded-md child:p-2 child:text-slate-50 child-hover:text-white child-hover:bg-slate-700 child-hover:cursor-pointer child:duration-150 child:ease-in-out">
+							<div className="flex gap-8 child:inline child:rounded-md child:p-2 child:text-white child-hover:text-white child-hover:bg-eerie-black-700 child-hover:cursor-pointer child:duration-150 child:ease-in-out">
 								{navigation.map(item => (
 									<NavLink
 										to={item.href}
 										key={item.name}
-										className={({ isActive }) => isActive ? "bg-slate-900" : undefined }
+										className={({ isActive }) => isActive ? "bg-eerie-black-800" : undefined }
 									>
 										{item.name}
 									</NavLink>
@@ -59,7 +59,7 @@ export default function Navbar() {
 				{/* mobile navbar */}
 				<nav className={`lg:hidden z-30 w-full overflow-hidden`}>
 					<div className="flex flex-col">
-						<div className="w-full top-0 z-20 bg-slate-800 flex justify-between items-center h-16 px-4">
+						<div className="w-full top-0 z-20 bg-eerie-black-900 flex justify-between items-center h-16 px-4">
 							<NavLink to="/" className="text-xl flex items-center" onClick={handleNavElemClick}>
 								<img src={umlLogo} alt="UMass Lowell" className="h-10 pr-4" />
 								<img src={arlStrongLogo} alt="UMass Lowell" className="h-10 pr-4" />
@@ -77,12 +77,12 @@ export default function Navbar() {
 								</span>
 							</button>
 						</div>
-						<div className={`animate__animated absolute top-16 z-10 child:z-10 w-full flex flex-col gap-4 py-4 bg-slate-800 child:text-slate-50 ${isToggled ? 'animate__slideInDown' : 'animate__slideOutUp'}`}>
+						<div className={`animate__animated absolute top-16 z-10 child:z-10 w-full flex flex-col gap-4 py-4 bg-eerie-black-900 child:text-white ${isToggled ? 'animate__slideInDown' : 'animate__slideOutUp'}`}>
 							{navigation.map(item => (
 								<NavLink
 									to={item.href}
 									key={item.name}
-									className={({ isActive }) => `rounded-md px-4 py-2 mx-4 ${isActive ? "bg-slate-900" : ''}` }
+									className={({ isActive }) => `rounded-md px-4 py-2 mx-4 ${isActive ? "bg-eerie-black-800" : ''}` }
 									onClick={handleNavElemClick}
 								>
 									{item.name}
