@@ -1,7 +1,7 @@
 export default function ContentBlock({heading, text}) {
 	return (
 		<section>
-			{heading !== '' && <h1 className="heading text-eerie-black-900">{heading}</h1>}
+			{heading !== '' && <h1 className="heading">{heading}</h1>}
 			<div>
 				{text.map((item, i) => (
 					<p

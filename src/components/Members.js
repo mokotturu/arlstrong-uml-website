@@ -74,12 +74,12 @@ const members = [
 export default function Members() {
 	return (
 		<section className="flex justify-center items-center">
-			<div className="py-20 responsive-width child:w-full flex flex-col gap-16">
+			<div className="py-20 responsive-width child:w-full flex flex-col gap-20">
 				{
 					members.map(category => (
 						<section key={category.category}>
 							<h1 className="heading">{category.category}</h1>
-							<section className="w-full flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-16">
+							<section className="w-full flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-20">
 								{category.list.map(person => (
 									<MemberCard
 										key={person.name}

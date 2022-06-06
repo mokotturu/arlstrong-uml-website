@@ -4,21 +4,26 @@
 
 @layer components {
   .heading {
-    @apply text-4xl text-slate-800 mb-8;
+    @apply text-4xl text-breen-900 mb-14 font-bold;
   }
 
   .responsive-width {
-    @apply w-[85%] lg:w-[65em] xl:w-[75em] 2xl:w-[85em]
+    @apply w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em];
+  }
+
+  .button {
+    @apply px-8 py-4 rounded-md bg-breen-800 text-white shadow-[0px_30px_90px] shadow-breen-300 hover:shadow-[0px_22px_70px_4px] hover:shadow-breen-400 hover:bg-breen-700 transition-all duration-300;
   }
 }
 
 :root {
   --animate-duration: 0.3s !important;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

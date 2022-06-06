@@ -33,10 +33,10 @@ export default function Publications() {
 			<div className="py-20 responsive-width child:w-full">
 				{publications.map((set, id) => (
 					<section
-						className="mb-16 last:mb-0"
+						className="mb-32 last:mb-0"
 						key={`publication-set-${id}`}
 					>
-						<h1 className="heading text-eerie-black-900">{set.heading}</h1>
+						<h1 className="heading">{set.heading}</h1>
 						<ol className="list-decimal list-inside ml-4">
 							{set.set.map((item, i) => (
 								<li
