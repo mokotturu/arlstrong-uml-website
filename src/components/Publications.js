@@ -29,7 +29,7 @@ const publications = [
 
 export default function Publications() {
 	return (
-		<section className="flex justify-center items-center">
+		<section className="flex justify-center items-center bg-white dark:bg-eerie-black-900 transition-all duration-150">
 			<div className="py-20 responsive-width child:w-full">
 				{publications.map((set, id) => (
 					<section
@@ -41,7 +41,7 @@ export default function Publications() {
 							{set.set.map((item, i) => (
 								<li
 									key={`publication-${i}`}
-									className="mb-2 last:mb-0 text-slate-grey"
+									className="mb-2 last:mb-0 text-eerie-black-900 dark:text-white"
 								>
 									<span className="ml-2">{item.citation}</span>
 								</li>

@@ -12,7 +12,7 @@
   }
 
   .button {
-    @apply px-8 py-4 rounded-md bg-breen-800 text-white shadow-[0px_30px_90px] shadow-breen-300 hover:shadow-[0px_22px_70px_4px] hover:shadow-breen-400 hover:bg-breen-700 transition-all duration-300;
+    @apply px-8 py-4 rounded-md bg-breen-800 text-white dark:text-eerie-black-900 hover:bg-breen-700 transition-all duration-300;
   }
 }
 

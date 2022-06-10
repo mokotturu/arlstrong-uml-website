@@ -6,7 +6,7 @@ export default function ContentBlock({heading, text}) {
 				{text.map((item, i) => (
 					<p
 						key={i}
-						className="text-eerie-black-800 mb-8 last:mb-0"
+						className="text-eerie-black-800 dark:text-white mb-8 last:mb-0"
 					>
 						{item}
 					</p>

@@ -4,7 +4,7 @@ import heroimg from "../images/hero.jpg"
 
 function About() {
 	return (
-		<section>
+		<section className="bg-white dark:bg-eerie-black-900 transition-all duration-150">
 			<ParticlesBg />
 			<section className="h-screen bg-transprent flex justify-center items-center relative z-10">
 				<div className="responsive-width flex flex-col items-center justify-center gap-8">
