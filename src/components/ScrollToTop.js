@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+/* import { useEffect, useState } from "react"
 
 
 export default function ScrollToTop() {
@@ -23,4 +23,19 @@ export default function ScrollToTop() {
 			</svg>
 		</button>
 	)
+}
+ */
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+export default function ScrollToTop(props) {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		console.log(pathname, 'scrolled to top')
+		window.scrollTo(0, 0);
+	}, [pathname]);
+
+	return null;
 }

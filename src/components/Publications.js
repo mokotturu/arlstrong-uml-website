@@ -1,27 +1,24 @@
 const publications = [
 	{
-		"heading": "Publications Set 1",
+		"heading": "Submitted",
 		"set": [
 			{
-				"citation": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
-				"url": "#",
+				"title": "Moral-Trust Violation vs Performance-Trust Violation by a Robot: Which Hurts More?",
+				"authors": "Zahra Rezaei Khavas, Russel Perkins, S. Reza Ahmadzadeh, Paul Robinette"
 			},
 			{
-				"citation": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
-				"url": "#",
+				"title": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
 			},
 		]
 	},
 	{
-		"heading": "Publications Set 2",
+		"heading": "Published or Accepted",
 		"set": [
 			{
-				"citation": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
-				"url": "#",
+				"title": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
 			},
 			{
-				"citation": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
-				"url": "#",
+				"title": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
 			},
 		]
 	},
@@ -29,7 +26,7 @@ const publications = [
 
 export default function Publications() {
 	return (
-		<section className="flex justify-center items-center">
+		<section className="flex justify-center flex-1">
 			<div className="py-20 responsive-width child:w-full">
 				{publications.map((set, id) => (
 					<section
@@ -37,13 +34,13 @@ export default function Publications() {
 						key={`publication-set-${id}`}
 					>
 						<h1 className="heading">{set.heading}</h1>
-						<ol className="list-decimal list-inside ml-4">
+						<ol className="list-decimal list-outside ml-10">
 							{set.set.map((item, i) => (
 								<li
 									key={`publication-${i}`}
-									className="mb-2 last:mb-0 text-slate-grey"
+									className="mb-2 last:mb-0 text-eerie-black-900"
 								>
-									<span className="ml-2">{item.citation}</span>
+									<span className="relative left-4">{item.title}</span>
 								</li>
 							))}
 						</ol>
