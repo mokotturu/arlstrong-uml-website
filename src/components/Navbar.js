@@ -1,29 +1,21 @@
 import { useState } from 'react';
 import '../css/mobilenav.css';
-import 'animate.css'
+import 'animate.css';
 
 import { NavLink } from 'react-router-dom';
 
-import umlLogo from "../images/uml_logo.svg";
-import arlStrongLogo from "../images/arl_logo.svg";
+import umlLogo from "../img/uml_logo.svg";
+import arlStrongLogo from "../img/arl_logo.svg";
 
 const navigation = [
 	{ name: 'Details', href: '/details' },
 	{ name: 'Members', href: '/members' },
 	{ name: 'Publications', href: '/publications' },
-	{ name: 'Showcase', href: '/showcase' },
+	{ name: 'Research Outcomes', href: '/showcase' },
 ];
 
-export default function Navbar() {
+const Navbar = () => {
 	const [isToggled, setActive] = useState(false);
-
-	const handleToggle = () => {
-		setActive(!isToggled);
-	}
-
-	const handleNavElemClick = () => {
-		if (isToggled) setActive(!isToggled)
-	}
 
 	return (
 		<section>
@@ -55,17 +47,21 @@ export default function Navbar() {
 				<div className="flex flex-col">
 					<div className="w-full top-0 z-30 bg-white flex justify-center items-center h-16">
 						<div className="responsive-width flex justify-between items-center">
-							<NavLink to="/" className="text-xl flex items-center" onClick={handleNavElemClick}>
+							<NavLink
+								to="/"
+								className="text-xl flex items-center"
+								onClick={() => { if (isToggled) setActive(!isToggled) }}
+							>
 								<img src={umlLogo} alt="UMass Lowell" className="h-10 pr-4" />
 								<img src={arlStrongLogo} alt="UMass Lowell" className="h-10 pr-4" />
 							</NavLink>
 							<button
-								className={`hamburger hamburger--arrowturn ${isToggled ? 'is-active' : ''}`}
-								onClick={handleToggle}
+								className={`hamburger hamburger--arrowturn ${isToggled ? 'is-active' : undefined}`}
+								onClick={() => setActive(!isToggled)}
 								type="button"
 								aria-label="Menu"
 								aria-controls="navigation"
-								>
+							>
 								<span className="hamburger-box">
 									<span className="hamburger-inner"></span>
 								</span>
@@ -78,7 +74,7 @@ export default function Navbar() {
 								to={item.href}
 								key={item.name}
 								className={({ isActive }) => `rounded-md px-4 py-2 mx-4 ${isActive ? "bg-breen-100" : ''}` }
-								onClick={handleNavElemClick}
+								onClick={() => { if (isToggled) setActive(!isToggled) }}
 							>
 								{item.name}
 							</NavLink>
@@ -89,3 +85,5 @@ export default function Navbar() {
 		</section>
 	)
 }
+
+export default Navbar;

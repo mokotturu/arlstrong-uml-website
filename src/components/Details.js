@@ -1,6 +1,6 @@
-import humanAgentTeamImg from "../images/human-agent-team.png";
+import humanAgentTeamImg from "../img/human-agent-team.png";
 
-export default function Details() {
+const Details = () => {
 	return (
 		<section className="flex justify-center flex-1">
 			<div className="py-20 responsive-width">
@@ -24,3 +24,5 @@ export default function Details() {
 		</section>
 	)
 }
+
+export default Details;

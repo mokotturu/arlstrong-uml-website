@@ -10,7 +10,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ScrollToTop from "./ScrollToTop";
 
-function App() {
+const App = () => {
 	return (
 		<Router>
 			<ScrollToTop />

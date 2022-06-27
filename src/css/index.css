@@ -23,6 +23,7 @@
 :root {
   --animate-duration: 0.3s !important;
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
 }
 
 body {

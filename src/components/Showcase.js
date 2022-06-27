@@ -1,4 +1,4 @@
-export default function Showcase() {
+const Showcase = () => {
 	return (
 		<section className="flex justify-center flex-1">
 			<div className="py-20 responsive-width child:w-full">
@@ -8,3 +8,5 @@ export default function Showcase() {
 		</section>
 	)
 }
+
+export default Showcase;

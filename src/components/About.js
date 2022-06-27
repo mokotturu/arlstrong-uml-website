@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
 import ParticlesBg from "./ParticlesBg";
-import heroimg from "../images/hero.jpg"
+import heroimg from "../img/hero.jpg"
 
-function About() {
+const About = () => {
 	return (
 		<section>
 			<ParticlesBg />

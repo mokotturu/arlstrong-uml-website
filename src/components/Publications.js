@@ -1,30 +1,44 @@
+import Publication from "./Publication";
+
 const publications = [
 	{
-		"heading": "Submitted",
-		"set": [
+		"heading": "Published or Accepted",
+		"items": [
 			{
-				"title": "Moral-Trust Violation vs Performance-Trust Violation by a Robot: Which Hurts More?",
-				"authors": "Zahra Rezaei Khavas, Russel Perkins, S. Reza Ahmadzadeh, Paul Robinette"
+				"title": "Reward-Sharing Relational Networks in Multi-Agent Reinforcement Learning as a Framework for Emergent Behavior",
+				"authors": "Hossein Haeri, Reza Ahmadzadeh, Kshitij Jerath",
+				"abstract": "In this work, we integrate 'social' interactions into the MARL setup through a user-defined relational network and examine the effects of agent-agent relations on the rise of emergent behaviors. Leveraging insights from sociology and neuroscience, our proposed framework models agent relationships using the notion of Reward-Sharing Relational Networks (RSRN), where network edge weights act as a measure of how much one agent is invested in the success of (or 'cares about') another. We construct relational rewards as a function of the RSRN interaction weights to collectively train the multi-agent system via a multi-agent reinforcement learning algorithm. The performance of the system is tested for a 3-agent scenario with different relational network structures (e.g., self-interested, communitarian, and authoritarian networks). Our results indicate that reward-sharing relational networks can significantly influence learned behaviors. We posit that RSRN can act as a framework where different relational networks produce distinct emergent behaviors, often analogous to the intuited sociological understanding of such networks.",
 			},
 			{
-				"title": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
+				"title": "Moral-Trust Violation vs Performance-Trust Violation by a Robot: Which Hurts More?",
+				"authors": "Zahra Rezaei Khavas, Russell Perkins, Reza Ahmadzadeh, Paul Robinette",
+			},
+			{
+				"title": "Trust Calibration and Trust Respect: A Method for Building Team Cohesion in Human Robot Teams",
+				"authors": "Russell Perkins, Zahra Rezaei Khavas, Paul Robinette",
 			},
 		]
 	},
 	{
-		"heading": "Published or Accepted",
-		"set": [
+		"heading": "Submitted",
+		"items": [
 			{
-				"title": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
+				"title": "Multi-Agent Coverage Path Planning with Neighborhood and Loop-Awareness",
+				"authors": "Alok Malik, Kshitij Jerath, Reza Ahmadzadeh",
 			},
 			{
-				"title": "ZR Khavas, R Perkins, SR Ahmadzadeh, P Robinette - arXiv preprint arXiv:2110.04418, 2021",
+				"title": "Employing Physiological Measurements for Trust Assessment in Human-Robot Interaction: Real-world challenges",
+				"authors": "Zahra Rezaei Khavas, Reza Ahmadzadeh, Paul Robinette",
+			},
+			{
+				"title": "Would Human Retaliation Strategy Vary Among Human and Robotic Teammates?",
+				"authors": "Zahra Rezaei Khavas, Reza Ahmadzadeh, Paul Robinette",
 			},
 		]
 	},
 ]
 
-export default function Publications() {
+const Publications = () => {
 	return (
 		<section className="flex justify-center flex-1">
 			<div className="py-20 responsive-width child:w-full">
@@ -34,19 +48,21 @@ export default function Publications() {
 						key={`publication-set-${id}`}
 					>
 						<h1 className="heading">{set.heading}</h1>
-						<ol className="list-decimal list-outside ml-10">
-							{set.set.map((item, i) => (
-								<li
+						<div className="flex flex-col gap-8">
+							{set.items.map((item, i) => (
+								<Publication
 									key={`publication-${i}`}
-									className="mb-2 last:mb-0 text-eerie-black-900"
-								>
-									<span className="relative left-4">{item.title}</span>
-								</li>
+									title={item.title}
+									authors={item.authors}
+									abstract={item.abstract}
+								/>
 							))}
-						</ol>
+						</div>
 					</section>
 				))}
 			</div>
 		</section>
 	)
 }
+
+export default Publications;

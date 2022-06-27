@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-export default function ParticlesBg() {
+const ParticlesBg = () => {
 	const particlesInit = async (main) => {
 		await loadFull(main);
 	};
@@ -123,3 +123,5 @@ export default function ParticlesBg() {
 		/>
 	)
 }
+
+export default ParticlesBg;
