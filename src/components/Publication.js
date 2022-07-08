@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-const Publication = ({title, authors, abstract}) => {
+const Publication = ({ pathName, title, authors, abstract }) => {
 	const [isOpen, setOpen] = useState(false);
 	const abstractRef = useRef();
 
@@ -13,7 +13,17 @@ const Publication = ({title, authors, abstract}) => {
 					<h2 className="text-xl mb-2">{title}</h2>
 					<p className="text-slate-grey">{authors}</p>
 				</div>
-				<div className="h-100 flex justify-center items-center">
+				<div className="h-100 flex justify-center items-center gap-2">
+					<a
+						href={pathName}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="p-3 rounded-lg bg-white hover:bg-breen-100 transition-all duration-300"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+							<path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+						</svg>
+					</a>
 					<button
 						onClick={() => setOpen(!isOpen)}
 						className="p-3 rounded-lg bg-white hover:bg-breen-100 transition-all duration-300"

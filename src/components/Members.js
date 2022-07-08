@@ -11,6 +11,7 @@ import jonroy from "../img/jonroy_canady.jpg";
 import nina from "../img/nina_lauharatanahirun.jpg";
 
 import monish from "../img/monishreddy_kotturu.png";
+import saba from "../img/zahra_rezaei_khavas.png";
 
 const members = [
 	{
@@ -115,7 +116,7 @@ const members = [
 				'role': 'Graduate Research Assistant',
 			},
 			{
-				'img': 'https://via.placeholder.com/150',
+				'img': saba,
 				'name': 'Zahra Rezaei Khavas',
 				'role': 'Graduate Research Assistant',
 			},

@@ -4,24 +4,30 @@ import About from "./About";
 import Details from "./Details";
 import Members from "./Members";
 import Publications from './Publications';
-import Showcase from './Showcase';
+import ResearchOutcomes from './ResearchOutcomes';
 
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ScrollToTop from "./ScrollToTop";
 
+const routes = [
+	{ show: false, name: 'About', path: '/', Component: <About /> },
+	{ show: true, name: 'Details', path: '/details', Component: <Details /> },
+	{ show: true, name: 'Members', path: '/members', Component: <Members /> },
+	{ show: true, name: 'Publications', path: '/publications', Component: <Publications /> },
+	{ show: true, name: 'Research Outcomes', path: '/research-outcomes', Component: <ResearchOutcomes /> },
+];
+
 const App = () => {
 	return (
 		<Router>
 			<ScrollToTop />
-			<Navbar />
+			<Navbar routes={routes} />
 
 			<Routes>
-				<Route path="/" element={<About />} />
-				<Route path="/details" element={<Details />} />
-				<Route path="/members" element={<Members />} />
-				<Route path="/publications" element={<Publications />} />
-				<Route path="/showcase" element={<Showcase />} />
+				{routes.map(({ name, path, Component }) => (
+					<Route key={name} path={path} element={Component} />
+				))}
 			</Routes>
 
 			<Footer />
