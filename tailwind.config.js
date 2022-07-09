@@ -4,6 +4,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        shiftLeft1: 'shiftLeft1 4s ease-in-out infinite',
+        shiftLeft2: 'shiftLeft2 4s ease-in-out infinite',
+      },
       colors: {
         'eerie-black': {
           100: '#F5F5F5',
@@ -30,12 +34,26 @@ module.exports = {
         'quick-silver': '#A7A8A3',
         'mid-grey': '90887E'
       },
+      keyframes: {
+        shiftLeft1: {
+          '0%, 30%': { transform: 'translateX(0)' },
+          '80%, 100%': { transform: 'translateX(-20%)' },
+        },
+        shiftLeft2: {
+          '0%, 30%': { transform: 'translateX(0)' },
+          '80%, 100%': { transform: 'translateX(-10%)' },
+        },
+      },
+      screens: {
+        'hover-hover': {'raw': '(hover: hover)'},
+        'hover-none': {'raw': '(hover: none)'},
+      },
     },
   },
   plugins: [
-    function ({ addVariant }) {
+    ({ addVariant }) => {
       addVariant('child', '& > *');
       addVariant('child-hover', '& > *:hover');
-    }
+    },
   ],
 }

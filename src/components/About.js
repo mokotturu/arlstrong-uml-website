@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-
 import ParticlesBg from "./ParticlesBg";
-import heroimg from "../img/hero.jpg"
+import heroimg from "../img/hero.jpg";
+import hoverImg from "../img/hover-img.png";
+import hoverImgText from "../img/hover-img-text.png";
 
 const About = () => {
 	return (
@@ -18,15 +18,18 @@ const About = () => {
 			</section>
 			<section id="main-content" className="flex justify-center relative z-10">
 				<div className="py-20 responsive-width child:w-full">
-					<section>
-						<h1 className="heading">Research Objective</h1>
-						<p className="text-eerie-black-800 mb-8">
-							The research objective of the proposed work is to demonstrate how varying resource constraints on individual learning entities (i.e. microscopic level model parameters of agents or humans) impacts the macroscopic level emergence of trust clusters in teams, and eventually team performance and cohesion. The proposed framework builds on the theories of Commons [1], Graves [2], and Jerath [3][4], to create a functionally-identical modeling, reinforcement learning, and adaptation framework for both humans and agents, that incorporates dynamic models of trust.
-						</p>
-						<p className="text-eerie-black-800">
-							Read more about our project summary in the <Link to="/details" className="link">details</Link> section.
-						</p>
-					</section>
+					<h1 className="heading my-40 text-center">Teams succeed because of the network of relationships they possess, and the emergent behaviors this network facilitates.</h1>
+					<div className="group relative overflow-hidden">
+						<div className="flex justify-center items-center">
+							<img className="rounded-xl hover-hover:brightness-50 hover-hover:group-hover:brightness-100 transition-all ease-in-out duration-300" src={hoverImg} alt="Hover" />
+						</div>
+						<div className="w-full h-full absolute -translate-y-full flex justify-center items-center">
+							<svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 stroke-neutral-50 hover-hover:group-hover:opacity-0 hover-none:hidden transition-all ease-in-out duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+								<path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+							</svg>
+						</div>
+						<img className="transition-all ease-in-out duration-300 absolute hover-hover:opacity-0 hover-hover:group-hover:opacity-100 hover-hover:-translate-y-2/3 hover-hover:group-hover:-translate-y-[97%] hover-none:-translate-y-[97%] hover-none: opacity-100 transform-gpu" src={hoverImgText} alt="Hover text" />
+					</div>
 				</div>
 			</section>
 		</section>

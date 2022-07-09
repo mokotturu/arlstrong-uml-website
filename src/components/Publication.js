@@ -5,15 +5,13 @@ const Publication = ({ pathName, title, authors, abstract }) => {
 	const abstractRef = useRef();
 
 	return (
-		<section
-			className="bg-white p-6 rounded-lg drop-shadow-lg"
-		>
-			<div className="flex flex-row justify-between">
+		<section className="bg-white p-6 rounded-lg drop-shadow-lg">
+			<div className="flex flex-col sm:flex-row justify-between">
 				<div>
 					<h2 className="text-xl mb-2">{title}</h2>
 					<p className="text-slate-grey">{authors}</p>
 				</div>
-				<div className="h-100 flex justify-center items-center gap-2">
+				<div className="h-100 flex justify-center items-center gap-2 mt-4 sm:mt-0">
 					<a
 						href={pathName}
 						target="_blank"
