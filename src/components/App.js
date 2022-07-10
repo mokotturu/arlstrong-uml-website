@@ -5,6 +5,7 @@ import Details from "./Details";
 import Members from "./Members";
 import Publications from './Publications';
 import ResearchOutcomes from './ResearchOutcomes';
+import Contact from './Contact';
 
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -16,6 +17,7 @@ const routes = [
 	{ show: true, name: 'Members', path: '/members', Component: <Members /> },
 	{ show: true, name: 'Publications', path: '/publications', Component: <Publications /> },
 	{ show: true, name: 'Research Outcomes', path: '/research-outcomes', Component: <ResearchOutcomes /> },
+	{ show: true, name: 'Contact', path: '/contact', Component: <Contact /> },
 ];
 
 const App = () => {

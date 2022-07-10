@@ -10,7 +10,7 @@ const About = () => {
 			<section className="h-screen bg-transprent flex justify-center relative z-10">
 				<div className="responsive-width flex flex-col items-center justify-center gap-8">
 					<h1 className="heading text-5xl text-center">Strengthening Teamwork for Robust Operations in Novel Groups</h1>
-					<a href="#us" className="button">Explore</a>
+					<a href="#us" className="big-button">Explore</a>
 				</div>
 			</section>
 			<section id="us" className="flex justify-center">
