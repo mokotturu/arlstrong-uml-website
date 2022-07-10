@@ -11,13 +11,21 @@
 		<meta name="theme-color" content="#000000" />
 		<meta
 			name="description"
-			content="Web site created using create-react-app"
+			content="Website for the Army Research Lab STRONG team at the University of Massachusetts Lowell"
 		/>
 		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 		<title>ARL STRONG - UMass Lowell</title>
 	</head>
 	<body>
+		<form name="contact-form" action="/" netlify hidden>
+			<label htmlFor="name">Name</label>
+			<input className="text-input w-full col-span-3" id="name" type="text" name="name" />
+			<label htmlFor="email">Email Address</label>
+			<input className="text-input w-full col-span-3" id="email" type="email" name="email" />
+			<label htmlFor="message">Your Message</label>
+			<textarea className="text-input w-full col-span-3 min-h-[2.625rem]" id="message" type="text" name="message"></textarea>
+		</form>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
 	</body>

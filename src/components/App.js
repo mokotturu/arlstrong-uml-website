@@ -31,7 +31,6 @@ const App = () => {
 					<Route key={name} path={path} element={Component} />
 				))}
 			</Routes>
-
 			<Footer />
 		</Router>
 	)
