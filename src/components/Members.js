@@ -126,7 +126,7 @@ const members = [
 				'name': 'Maitry Trivedi',
 				'role': 'Graduate Research Assistant',
 				'description': {
-					__html: 'I am a PhD in Computer Science student working under the guidance of Prof. Paul Robinette. My research interests are Human-Robot interaction, Human-Robot trust, Reinforcement Learning. Currently, I am working on a evaluating the effect of performance-trust violating vs moral-trust violation for search and rescue mission. Here is the paper which was accepted in ICRA 2022 workshop on <a class="link" href="https://arxiv.org/abs/2206.15430" target="_blank" rel="noopener noreferrer">"Shared Autonomy in Physical Human-Robot Interaction: Adaptability and Trust"</a>'
+					__html: 'I am a PhD in Computer Science student working under the guidance of Prof. Paul Robinette. My research interests are Human-Robot interaction, Human-Robot trust, Reinforcement Learning. Currently, I am working on a evaluating the effect of performance-trust violating vs moral-trust violation for search and rescue mission. Here is the paper which was accepted in ICRA 2022 workshop on <a class="link" href="https://arxiv.org/abs/2206.15430" target="_blank" rel="noopener noreferrer">"Shared Autonomy in Physical Human-Robot Interaction: Adaptability and Trust"</a>.'
 				},
 			},
 			{
