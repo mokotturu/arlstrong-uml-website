@@ -106,27 +106,11 @@ const members = [
 				},
 			},
 			{
-				'img': nodp,
-				'name': 'Alden Giedraitis',
-				'role': 'Undergraduate Research Assistant',
-				'description': {
-					__html: ''
-				},
-			},
-			{
 				'img': alok,
 				'name': 'Alok Malik',
 				'role': 'Graduate Research Assistant',
 				'description': {
 					__html: 'I\'m a Master\'s in Computer Science student at University of Massachusetts Lowell(UML). I work with Dr. Reza Ahmadzadeh, who is my master\'s thesis advisor. Prior to coming at UML I worked as ML engineer in India where I worked primarily on NLP and CV with deep learning and also co-authored a book on unsupervised Machine Learning. My research at UML mainly focuses on multi-agent systems and coverage path planning for search and rescue missions. More details on my research and projects are available on my personal website: <a class="link" href="https://alokmalik.com" target="_blank" rel="noopener noreferrer">alokmalik.com</a>.'
-				},
-			},
-			{
-				'img': nodp,
-				'name': 'Fernando Mazzoni',
-				'role': 'Graduate Research Assistant',
-				'description': {
-					__html: ''
 				},
 			},
 			{
@@ -146,27 +130,11 @@ const members = [
 				},
 			},
 			{
-				'img': nodp,
-				'name': 'Mohamed Martini',
-				'role': 'Graduate Research Assistant',
-				'description': {
-					__html: ''
-				},
-			},
-			{
 				'img': monish,
 				'name': 'Monish Reddy Kotturu',
 				'role': 'Undergraduate Research Assistant',
 				'description': {
 					__html: 'I am a rising third-year undergraduate at the University of Massachusetts Lowell majoring in computer science in the data science option and minoring in mathematics. As a part of the STRONG team, I implemented the 2D games for the Simple Trust and Performance-Moral Trust games and collected game data for analysis. Additionally, I am working on the relatively new multi-agent multi-armed bandit problem under Professor Reza Ahmadzadeh in the <a class="link" href="https://www.pearl-robotics.com/" target="_blank" rel="noopener noreferrer">PeARL lab</a> to draw results that might be in STRONG\'s interests.'
-				},
-			},
-			{
-				'img': nodp,
-				'name': 'Russ Perkins',
-				'role': 'Graduate Research Assistant',
-				'description': {
-					__html: ''
 				},
 			},
 			{
@@ -184,7 +152,39 @@ const members = [
 		'list': [
 			{
 				'img': nodp,
+				'name': 'Alden Giedraitis',
+				'role': 'Undergraduate Research Assistant',
+				'description': {
+					__html: ''
+				},
+			},
+			{
+				'img': nodp,
 				'name': 'Ashwin Nair',
+				'role': 'Graduate Research Assistant',
+				'description': {
+					__html: ''
+				},
+			},
+			{
+				'img': nodp,
+				'name': 'Fernando Mazzoni',
+				'role': 'Graduate Research Assistant',
+				'description': {
+					__html: ''
+				},
+			},
+			{
+				'img': nodp,
+				'name': 'Mohamed Martini',
+				'role': 'Graduate Research Assistant',
+				'description': {
+					__html: ''
+				},
+			},
+			{
+				'img': nodp,
+				'name': 'Russ Perkins',
 				'role': 'Graduate Research Assistant',
 				'description': {
 					__html: ''
