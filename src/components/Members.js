@@ -134,7 +134,7 @@ const members = [
 				'name': 'Monish Reddy Kotturu',
 				'role': 'Undergraduate Research Assistant',
 				'description': {
-					__html: 'I am a rising third-year undergraduate at the University of Massachusetts Lowell majoring in computer science in the data science option and minoring in mathematics. As a part of the STRONG team, I implemented the 2D games for the Simple Trust and Performance-Moral Trust games and collected game data for analysis. Additionally, I am working on the relatively new multi-agent multi-armed bandit problem under Professor Reza Ahmadzadeh in the <a class="link" href="https://www.pearl-robotics.com/" target="_blank" rel="noopener noreferrer">PeARL lab</a> to draw results that might be in STRONG\'s interests.'
+					__html: 'I am a rising third-year undergraduate at the University of Massachusetts Lowell majoring in computer science in the data science option and minoring in mathematics. As a part of the STRONG team, I implemented the 2D games for the Simple Trust and Performance-Moral Trust games and collected game data for analysis. Additionally, I am working on the multi-agent multi-armed bandit problem under Professor Reza Ahmadzadeh in the <a class="link" href="https://www.pearl-robotics.com/" target="_blank" rel="noopener noreferrer">PeARL lab</a> to draw results that might be in STRONG\'s interests.'
 				},
 			},
 			{

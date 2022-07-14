@@ -1,7 +1,7 @@
 const ResearchOutcomes = () => {
 	return (
 		<section className="flex justify-center flex-1">
-			<div className="flex flex-col">
+			<div className="flex flex-col items-center">
 				<div className="py-20 responsive-width child:w-full">
 					<h1 className="heading">Presentations</h1>
 					<div className="flex flex-col w-full gap-8 child:w-full">
