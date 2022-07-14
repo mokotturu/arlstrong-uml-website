@@ -201,7 +201,7 @@ const Members = () => {
 				{
 					members.map(category => (
 						<section key={category.category}>
-							<h1 className="heading">{category.category}</h1>
+							<h1 className="heading mb-16">{category.category}</h1>
 							<section className="w-full flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-20">
 								{category.list.map(person => (
 									<div key={person.name}>

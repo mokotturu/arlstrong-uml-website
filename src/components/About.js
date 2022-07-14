@@ -8,7 +8,7 @@ const About = () => {
 		<section>
 			<ParticlesBg />
 			<section className="h-screen bg-transprent flex justify-center relative z-10">
-				<div className="responsive-width flex flex-col items-center justify-center gap-8">
+				<div className="responsive-width flex flex-col items-center justify-center gap-20">
 					<h1 className="heading lg:text-5xl text-center">Trust-NEARCHAT: Trust Network Emergence Amongst Resource-Constrained multi Human-Agent Teams</h1>
 					<a href="#us" className="big-button">Explore</a>
 				</div>

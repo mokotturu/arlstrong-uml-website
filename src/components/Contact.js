@@ -2,7 +2,7 @@ const Contact = () => {
 	return (
 		<section className="flex justify-center flex-1">
 			<div className="responsive-width py-20 child:w-full flex flex-col gap-10">
-				<h1 className="heading">Get in touch with us!</h1>
+				<h1 className="heading mb-16">Get in touch with us!</h1>
 				<form name="contact-form" className="grid grid-cols-4 gap-4 items-center" method="post" data-netlify="true" action="/">
 					<input type="hidden" name="form-name" value="contact-form" />
 					<label htmlFor="name">Name</label>

@@ -35,7 +35,7 @@ const Publications = () => {
 						className="mb-32 last:mb-0"
 						key={`publication-set-${id}`}
 					>
-						<h1 className="heading">{set.heading}</h1>
+						<h1 className="heading mb-16">{set.heading}</h1>
 						<div className="flex flex-col gap-8">
 							{set.items.map((item, i) => (
 								<Publication
