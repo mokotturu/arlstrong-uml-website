@@ -16,6 +16,7 @@ import hamid from "../img/hamid_osooli.jpg";
 import maitry from "../img/maitry_trivedi.jpeg";
 import monish from "../img/monishreddy_kotturu.png";
 import saba from "../img/zahra_rezaei_khavas.png";
+import yasin from "../img/yasin_findik.jpg";
 
 import nodp from "../img/nodp.svg";
 
@@ -106,14 +107,6 @@ const members = [
 				},
 			},
 			{
-				'img': alok,
-				'name': 'Alok Malik',
-				'role': 'Graduate Research Assistant',
-				'description': {
-					__html: 'I\'m a Master\'s in Computer Science student at University of Massachusetts Lowell(UML). I work with Dr. Reza Ahmadzadeh, who is my master\'s thesis advisor. Prior to coming at UML I worked as ML engineer in India where I worked primarily on NLP and CV with deep learning and also co-authored a book on unsupervised Machine Learning. My research at UML mainly focuses on multi-agent systems and coverage path planning for search and rescue missions. More details on my research and projects are available on my personal website: <a class="link" href="https://alokmalik.com" target="_blank" rel="noopener noreferrer">alokmalik.com</a>.'
-				},
-			},
-			{
 				'img': hamid,
 				'name': 'Hamid Osooli',
 				'role': 'Graduate Research Assistant',
@@ -134,7 +127,7 @@ const members = [
 				'name': 'Monish Reddy Kotturu',
 				'role': 'Undergraduate Research Assistant',
 				'description': {
-					__html: 'I am a rising third-year undergraduate at the University of Massachusetts Lowell majoring in computer science in the data science option and minoring in mathematics. As a part of the STRONG team, I implemented the 2D games for the Simple Trust and Performance-Moral Trust games and collected game data for analysis. Additionally, I am working on the multi-agent multi-armed bandit problem under Professor Reza Ahmadzadeh in the <a class="link" href="https://www.pearl-robotics.com/" target="_blank" rel="noopener noreferrer">PeARL lab</a> to draw results that might be in STRONG\'s interests.'
+					__html: 'I am an undergraduate at the University of Massachusetts Lowell majoring in computer science in the data science option and minoring in mathematics. As a part of the STRONG team, I implemented the 2D games for the Simple Trust, Performance-Moral Trust, and Retaliation games and collected game data for analysis. Additionally, I am working on the multi-agent multi-armed bandit problem under Professor Reza Ahmadzadeh in the <a class="link" href="https://www.pearl-robotics.com/" target="_blank" rel="noopener noreferrer">PeARL lab</a> to draw results that might be in STRONG\'s interests.'
 				},
 			},
 			{
@@ -143,6 +136,14 @@ const members = [
 				'role': 'Graduate Research Assistant',
 				'description': {
 					__html: 'I am a third-year Ph.D. student in the University of Massachusetts Lowell\'s electrical and computer engineering department. I do my Ph.D. studies under the supervision of Prof. Paul Robinette. My Ph.D. research focuses on human-robot trust, and my background is in biomedical engineering (bio-electrics) and bio-signal processing. In particular, I am interested in modeling human-robot trust using multimodal physiological measurements. In addition to this primary line of research, I am interested in evaluating human behavior toward immoral robots and assessing the differences in human reactions in response to immoral behavior by humans and robots. Visit my <a class="link" href="https://scholar.google.com/citations?hl=en&user=5YObBOQAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> page to see my published papers.'
+				},
+			},
+			{
+				'img': yasin,
+				'name': 'Yasin Findik',
+				'role': 'Graduate Research Assistant',
+				'description': {
+					__html: ''
 				},
 			},
 		]
@@ -156,6 +157,14 @@ const members = [
 				'role': 'Undergraduate Research Assistant',
 				'description': {
 					__html: ''
+				},
+			},
+			{
+				'img': alok,
+				'name': 'Alok Malik',
+				'role': 'Graduate Research Assistant',
+				'description': {
+					__html: 'I\'m a Master\'s in Computer Science student at University of Massachusetts Lowell (UML). I work with Dr. Reza Ahmadzadeh, who is my master\'s thesis advisor. Prior to coming at UML I worked as ML engineer in India where I worked primarily on NLP and CV with deep learning and also co-authored a book on unsupervised Machine Learning. My research at UML mainly focuses on multi-agent systems and coverage path planning for search and rescue missions. More details on my research and projects are available on my personal website: <a class="link" href="https://alokmalik.com" target="_blank" rel="noopener noreferrer">alokmalik.com</a>.'
 				},
 			},
 			{
