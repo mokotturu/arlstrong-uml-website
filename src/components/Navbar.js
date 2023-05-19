@@ -15,17 +15,21 @@ const Navbar = ({ routes }) => {
 			{/* desktop navbar */}
 			<nav className="z-30 top-0 bg-white hidden lg:flex lg:justify-center h-20">
 				<div className="text-eerie-black-900 font-medium flex justify-between items-center lg:min-w-[60em] xl:min-w-[75em] 2xl:min-w-[85em]">
-					<NavLink to="/" className="text-2xl flex items-center navlink">
-						<img src={umlLogo} alt="UMass Lowell" className="h-12 pr-4" />
-						<img src={arlStrongLogo} alt="UMass Lowell" className="h-12 pr-4" />
-					</NavLink>
+					<div className="flex">
+						<a href="https://uml.edu" target="blank" rel="noreferrer noopener" className="text-2xl flex items-center navlink">
+							<img src={umlLogo} alt="UMass Lowell" className="h-12 pr-4" />
+						</a>
+						<a href="https://www.arl.army.mil/" target="blank" rel="noreferrer noopener" className="text-2xl flex items-center navlink">
+							<img src={arlStrongLogo} alt="UMass Lowell" className="h-12 pr-4" />
+						</a>
+					</div>
 					<div className="flex gap-8 child:inline child:rounded-md child:p-2 child:text-eerie-black-900  child-hover:bg-breen-100 child-hover:cursor-pointer child:duration-150 child:ease-in-out">
 						{routes.map(item => (
 							item.show &&
 							<NavLink
 								to={item.path}
 								key={item.name}
-								className={({ isActive }) => `navlink ${isActive ? "bg-breen-100" : undefined}` }
+								className={({ isActive }) => `navlink ${isActive ? "bg-breen-100" : undefined}`}
 							>
 								{item.name}
 							</NavLink>
@@ -66,7 +70,7 @@ const Navbar = ({ routes }) => {
 							<NavLink
 								to={item.path}
 								key={item.name}
-								className={({ isActive }) => `rounded-md px-4 py-2 mx-4 navlink ${isActive ? "bg-breen-100" : undefined}` }
+								className={({ isActive }) => `rounded-md px-4 py-2 mx-4 navlink ${isActive ? "bg-breen-100" : undefined}`}
 								onClick={() => { if (isToggled) setActive(!isToggled) }}
 							>
 								{item.name}

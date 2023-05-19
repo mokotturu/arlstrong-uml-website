@@ -8,8 +8,8 @@ const Publication = ({ pathName, title, authors, abstract }) => {
 		<section className="bg-white p-6 rounded-lg drop-shadow-lg">
 			<div className="flex flex-col sm:flex-row justify-between">
 				<div>
-					<h2 className="text-xl mb-2">{title}</h2>
-					<p className="text-slate-grey">{authors}</p>
+					<h2 className="text-base mb-2">{title}</h2>
+					<p className="text-base text-slate-grey">{authors}</p>
 				</div>
 				<div className="h-100 flex justify-center items-center gap-2 mt-4 sm:mt-0">
 					<a
@@ -26,7 +26,7 @@ const Publication = ({ pathName, title, authors, abstract }) => {
 						onClick={() => setOpen(!isOpen)}
 						className="p-3 rounded-lg bg-white hover:bg-breen-100 transition-all duration-300"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 transition-all duration-300 ${isOpen ? '-rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+						<svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 transition-all duration-300 ${isOpen ? '' : '-rotate-180'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
 						</svg>
 					</button>
@@ -44,8 +44,8 @@ const Publication = ({ pathName, title, authors, abstract }) => {
 				ref={abstractRef}
 			>
 				<div className="mt-6 pt-6 border-t-2">
-					<h2 className="text-xl mb-4">Abstract</h2>
-					<p className="text-[100%]">{abstract}</p>
+					<h2 className="text-base mb-4">Abstract</h2>
+					<p className="text-base">{abstract}</p>
 				</div>
 			</div>
 		</section>
