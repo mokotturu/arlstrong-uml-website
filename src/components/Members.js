@@ -14,6 +14,7 @@ import nina from "../img/nina_lauharatanahirun.jpg";
 import alden_d from "../img/alden_daniels.png";
 import alok from "../img/alok_malik.jpeg";
 import hamid from "../img/hamid_osooli.png";
+import kalvin from "../img/kalvin_mccallum.jpg";
 import maitry from "../img/maitry_trivedi.jpeg";
 import monish from "../img/monishreddy_kotturu.png";
 import saba from "../img/zahra_rezaei_khavas.png";
@@ -153,12 +154,21 @@ const members = [
 				},
 			},
 			{
+				'img': kalvin,
+				'name': 'Kalvin McCallum',
+				'role': 'Graduate Research Assistant',
+				'link': 'https://www.linkedin.com/in/kalvinmccallum/',
+				'description': {
+					__html: 'My name is Kalvin McCallum and I am originally from South Africa. I recently graduated Suma Cum Lauda in a BS Computer Engineering at UMass Lowell and I am currently pursuing my Masters in Computer Engineering at UMass Lowell. My research interests include robotics, brain-computer interfaces, and human-robot interaction.'
+				},
+			},
+			{
 				'img': monish,
 				'name': 'Monish Reddy Kotturu',
 				'role': 'Graduate Research Assistant',
 				'link': 'https://www.linkedin.com/in/monish-reddy-kotturu/',
 				'description': {
-					__html: 'I am a rising graduate student at the University of Massachusetts Lowell who just received a bachelor\'s degree in computer science. As a part of the STRONG team, I implemented the 2D games for the trust games and collected game data for analysis. Additionally, I am working on multi-agent reinforcement learning (more specifically, multi-agent multi-armed bandits) under Professor Reza Ahmadzadeh in the <a class="link" href="https://www.pearl-robotics.com/" target="_blank" rel="noopener noreferrer">PeARL lab</a> to improve team performance.'
+					__html: 'I am a rising Master\'s student at the University of Massachusetts Lowell and I just graduated Magna Cum Laude at UML with a Bachelor of Science in Computer Science. As a part of the STRONG team, I implemented the 2D games for the trust games and collected game data for analysis. Additionally, I am working on multi-agent reinforcement learning (more specifically, multi-agent multi-armed bandits) under Professor Reza Ahmadzadeh in the <a class="link" href="https://www.pearl-robotics.com/" target="_blank" rel="noopener noreferrer">PeARL lab</a> to improve multi-agent team performance.'
 				},
 			},
 			{
