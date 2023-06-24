@@ -11,6 +11,7 @@ import jennifer from "../img/jennifer_kubota.JPG";
 import jonroy from "../img/jonroy_canady.jpg";
 import nina from "../img/nina_lauharatanahirun.jpg";
 
+import akshay from "../img/akshay_kolli.png";
 import alden_d from "../img/alden_daniels.png";
 import alok from "../img/alok_malik.jpeg";
 import hamid from "../img/hamid_osooli.png";
@@ -118,12 +119,12 @@ const members = [
 		'category': 'Research Assistants',
 		'list': [
 			{
-				'img': nodp,
+				'img': akshay,
 				'name': 'Akshay Kolli',
 				'role': 'Graduate Research Assistant',
-				'link': '',
+				'link': 'https://www.linkedin.com/in/akshay-kolli-a5795317a/',
 				'description': {
-					__html: ''
+					__html: 'I\'m a masters student in the Computer Science department at the University of Massachusetts, Lowell. My research is focused on the evolution of graphs and propagation of change in graphs.'
 				},
 			},
 			{
